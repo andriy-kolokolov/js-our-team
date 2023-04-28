@@ -19,7 +19,6 @@ listProfiles.forEach(
 
 loadProfiles(eleListProfileNames, eleListProfileRoles, eleListProfileImages);
 
-console.log("xui test")
 function loadProfiles(eleListProfileNames, eleListProfileRoles, eleListProfileImages) {
    const showProfilesDelay = 350;  // delay between fade-in and show each profile
    const eleFadeInTime = 10; // elements fade in timing
@@ -62,8 +61,4 @@ function unFade(element, fadeInTime, endOpacity) {
       element.style.filter = 'alpha(opacity=' + op * 100 + ")";
       op += op * 0.1;
    }, fadeInTime);
-}
-
-function showTypingAnimation() {
-   
 }
