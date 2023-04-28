@@ -14,20 +14,40 @@ header {
         opacity: 0
     }
     100% {
-        transform: translateY( var(--header-hight))
+        transform: translateY(var(--header-hight))
     }
 }
 
+header p {
+    font-weight: lighter;
+}
+
 main {
-    margin-top:  var(--header-hight);
+    margin-top: var(--header-hight);
+}
+
+.profiles-wrapper div {
+    text-align: center;
+}
+
+.profile_name {
+    cursor: pointer;
+    color: black;
+    display: inline-block;
+}
+
+.profile_name:hover {
+    opacity: 1;
+    color: #006bf8;
 }
 
 .profile_name {
     margin-top: 25px;
+    font-weight: 600;
 }
 
 .profile_img {
-    box-shadow: 0 0 25px 0 rgba(0,0,0,0.70);
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.70);
     cursor: pointer;
     transition: transform .5s;
 }
