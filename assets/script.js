@@ -1,6 +1,6 @@
-const listProfileNames = document.querySelectorAll(".profile_name");
-const listProfileRoles = document.querySelectorAll(".profile_role");
-const listProfileImages = document.querySelectorAll(".profile_img");
+const eleListProfileNames = document.querySelectorAll(".profile_name");
+const eleListProfileRoles = document.querySelectorAll(".profile_role");
+const eleListProfileImages = document.querySelectorAll(".profile_img");
 
 // profile objects 
 const profile1 = {name: "Wayne Barnett", role: "Founder & CEO", imgPath: "assets/img/wayne-barnett-founder-ceo.jpg"};
@@ -17,14 +17,14 @@ listProfiles.forEach(
     profile => console.log(profile.name + " " + profile.role + " " + profile.imgPath)
 );
 
-listProfileNames.forEach((nameElement, index) => {
+eleListProfileNames.forEach((nameElement, index) => {
    nameElement.innerHTML =  `${listProfiles[index].name}`;
 });
 
-listProfileRoles.forEach((roleElement, index) => {
+eleListProfileRoles.forEach((roleElement, index) => {
    roleElement.innerHTML =  `${listProfiles[index].role}`;
 });
 
-listProfileImages.forEach((imgElement, index) => {
+eleListProfileImages.forEach((imgElement, index) => {
    imgElement.src = `${listProfiles[index].imgPath}`;
 });
