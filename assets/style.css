@@ -1,10 +1,35 @@
-.profile_name{
-    margin-top:25px;
+:root {
+    --header-hight: 200px;
+}
+
+header {
+    position: absolute;
+    top: calc(-1 * (var(--header-hight)));
+    padding: 2em;
+    animation: drop 1s ease forwards;
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0
+    }
+    100% {
+        transform: translateY( var(--header-hight))
+    }
+}
+
+main {
+    margin-top:  var(--header-hight);
+}
+
+.profile_name {
+    margin-top: 25px;
 }
 
 .profile_img {
+    box-shadow: 0 0 25px 0 rgba(0,0,0,0.70);
     cursor: pointer;
-    transition:  transform .5s;
+    transition: transform .5s;
 }
 
 .profile_img:hover {
